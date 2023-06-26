@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/selectric.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="/JS/Profile/dist/team/profile/profile.css">
+    <link rel="stylesheet" href="/dashboard-ui-1-project-management-with-charts/dist/calend.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+</head>
+<body>
+    <!-- partial:index.partial.html -->
+<nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0">
+	
+	<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+		<img alt="img1"  width="30" height="25" src="/JS/Profile/dist/img/mercado-livre-logo-D1DC52B13E-seeklogo.com.png" />
+		<b>Mercado Livre - IS</b>
+	</a>
+	<ul class="navbar-nav px-3">
+		<li class="nav-item text-nowrap">
+			<a class="nav-link" href="#">Sign out</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="container-fluid">
+	<div class="row">
+		<nav class="col-md-2 d-none d-md-block sidebar">
+			<div class="sidebar-sticky">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="/JS/Profile/dist/home/index.html">
+                  <i class="zmdi zmdi-widgets"></i>
+                  Dashboard 
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/JS/Profile/dist/Documentations/doc.html">
+                  <i class="zmdi zmdi-file-text"></i>
+                  Ducumetações
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="/JS/Profile/dist/team/team.html">
+                  <i class="zmdi zmdi-accounts"></i>
+                  Team IS - ADM
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/JS/Profile/dist/task/task.html">
+                  <i class="zmdi zmdi-chart"></i>
+                  Tasks
+                </a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link" href="/JS/Profile/dist/rede/rede.html">
+                  <i class="zmdi zmdi-layers"></i>
+                  Networking
+                </a>
+					</li> -->
+				</ul>
+
+				<h6 class="sidebar-heading d-flex justify-content-between align-items-center pl-3 mt-4 mb-1 text-muted" style="font-size: 14px;">
+					<span>Aplicações Favoritas</span>
+					<!-- <a class="d-flex align-items-center text-muted" href="#">
+						<i class="zmdi zmdi-plus-circle-o"></i>
+					</a> -->
+				</h6>
+				
+				<ul class="nav flex-column mb-2">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="zmdi zmdi-plus-circle-o"style="margin-left: 4px;"></i>
+						New URL
+					</a>
+				</li>
+				
+					<li class="nav-item">
+						<a class="nav-link" href="https://app.frontapp.com/inboxes/">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/front.png" />
+                	Front
+                </a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="https://arturito.adminml.com/">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/r2d2.jpeg" />
+                	Arturito
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://mordor-backoffice.adminml.com/home">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/mordor.jpeg" />
+                 	Mordor
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://dory.adminml.com/home">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/dory.jpeg" />
+                  	Dory
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://shield.adminml.com/account">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/shild.jpeg" />
+                  	Shild
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://grafana-monitoreo.whale.ml/d/krQevsnMz/home?orgId=1">
+							<img alt="img1" width="25" height="25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFrdHnZYEhhfx0IHB1hL_vdDSON-NQSkQXuTcPK2BfOQlb51Aa3jmPC6SfVxfzgP2uxbo&usqp=CAU" />
+					  Grafana
+				</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+
+
+        <!--    PERFIL     -->>
+
+        <div class="container-fluid pt-5 mt-5 pb-5">
+	
+            <!-- Widget Style 1 Start -->
+            <div class="card-list">
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card blue">
+							<div class="title" style="font-size: 12px;"> Assignados</div>
+									<a href="https://shield.adminml.com/requestsFilter">
+										<i class="btn zmdi zmdi-upload"></i>
+									</a>
+								</i>
+							<div class="value">12</div>
+							<!-- <div class="stat"><b>13</b>% increase</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card green">
+							<div class="title" style="font-size: 12px;" >Resolved</div>
+							<!-- <i class="zmdi zmdi-upload"></i> -->
+								<i class="btn zmdi zmdi-upload">
+								</i>
+							<div class="value">27</div>
+							<!-- <div class="stat"><b>4</b>% increase</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card pink">
+							<div class="title" style="font-size: 12px;" >Paused</div>
+							<!-- <i class="zmdi zmdi-upload"></i> -->	
+							<i class="btn zmdi zmdi-upload">
+							</i>
+							<div class="value">29</div>
+							<!-- <div class="stat"><b>4</b>% increase</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card orange">
+							<div class="title" style="font-size: 12px;">Waiting for Client</div>
+							<!-- <i class="zmdi zmdi-download"></i> -->
+							<i class="btn zmdi zmdi-upload">
+							</i>
+							<div class="value">25</div>
+							<!-- <div class="stat"><b>13</b>% decrease</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card red">
+							<div class="title" style="font-size: 12px;">Closed</div>
+							<i class="btn zmdi zmdi-upload"></i>
+							<!-- <i class="zmdi zmdi-download"></i> -->
+							<div class="value">41</div>
+							<!-- <div class="stat"><b>13</b>% decrease</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card purple">
+							<div class="title" style="font-size: 12px;">Waiting Approved</div>
+							<!-- <i class="zmdi zmdi-download"></i> -->
+							<a href="https://shield.adminml.com/requests/1139795?userId=me&page=1">
+								<i class="btn zmdi zmdi-upload"></i>
+							</a>
+							<div class="value">41</div>
+							<!-- <div class="stat"><b>13</b>% decrease</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+                <!-- <div class="row">
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style1">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="circle-icon">
+                                    <div class="icon border-radius-100 font-24 text-blue"><i class="fa fa-user" aria-hidden="true"></i></div>
+                                </div>
+                                <div class="widget-data">
+                                    <div class="weight-800 font-18">2020</div>
+                                    <div class="weight-500">Assiganados</div>
+                                </div>
+                                <div class="progress-data">
+                                    <div id="chart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white widget-style1 border-radius-10 height-100-p box-shadow">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="circle-icon">
+                                    <div class="icon border-radius-100 font-24 text-blue"><i class="fa fa-handshake-o" aria-hidden="true"></i></div>
+                                </div>
+                                <div class="widget-data">
+                                    <div class="weight-800 font-18">400</div>
+                                    <div class="weight-500">Deals</div>
+                                </div>
+                                <div class="progress-data">
+                                    <div id="chart2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style1">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="circle-icon">
+                                    <div class="icon border-radius-100 font-24 text-blue"><i class="fa fa-bullhorn" aria-hidden="true"></i></div>
+                                </div>
+                                <div class="widget-data">
+                                    <div class="weight-800 font-18">350</div>
+                                    <div class="weight-500">Campaign</div>
+                                </div>
+                                <div class="progress-data">
+                                    <div id="chart3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style1">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="circle-icon">
+                                    <div class="icon border-radius-100 font-24 text-blue"><i class="fa fa-dollar" aria-hidden="true"></i></div>
+                                </div>
+                                <div class="widget-data">
+                                    <div class="weight-800 font-18">$6060</div>
+                                    <div class="weight-500">Worth</div>
+                                </div>
+                                <div class="progress-data">
+                                    <div id="chart4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- Widget Style 1 End -->
+                
+                <div class="row">
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style2">
+                            <div class="widget-data">
+                                <div class="weight-800 font-24">12</div>
+                                <div class="weight-500 font-18">Online Assignados</div>
+                            </div>
+                            <div class="progress-data">
+                                <div id="chart5"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style2">
+                            <div class="widget-data">
+                                <div class="weight-800 font-24">27</div>
+                                <div class="weight-500 font-18">Resolved</div>
+                            </div>
+                            <div class="progress-data">
+                                <div id="chart6"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style2">
+                            <div class="widget-data">
+                                <div class="weight-800 font-24">Total Tickts</div>
+                                <div class="weight-500 font-18"></div>
+                            </div>
+                            <div class="progress-data pl-20 pr-20">
+                                <div id="chart7"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style2">
+                            <div class="widget-data">
+                                <div class="weight-800 font-24">$60,600</div>
+                                <div class="weight-500 font-18">Total Revenue This Year</div>
+                            </div>
+                            <div class="progress-data">
+                                <div id="chart8"></div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                
+                <div class="row">
+                    <div class="col-xl-8 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p pd-20">
+                            <h2 class="font-weight-700 font-24 mb-20">Activity</h2>
+                            <div id="chart9"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p pd-20">
+                            <h2 class="font-weight-700 font-24 mb-20">Lead Target</h2>
+                            <div id="chart10"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style3">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="widget-data">
+                                    <div class="weight-500 font-20">Server</div>
+                                    <div class="weight-500 font-30 text-dark">75%</div>
+                                </div>
+                                <div class="widget-icon">
+                                    <div class="icon"><i class="fa fa-server" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style3">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="widget-data">
+                                    <div class="weight-500 font-20">Traffic</div>
+                                    <div class="weight-500 font-30 text-dark">55%</div>
+                                </div>
+                                <div class="widget-icon">
+                                    <div class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style3">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="widget-data">
+                                    <div class="weight-500 font-20">Email</div>
+                                    <div class="weight-500 font-30 text-dark">100</div>
+                                </div>
+                                <div class="widget-icon">
+                                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="bg-white box-shadow border-radius-10 height-100-p widget-style3">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="widget-data">
+                                    <div class="weight-500 font-20">Domians</div>
+                                    <div class="weight-500 font-30 text-dark">50</div>
+                                </div>
+                                <div class="widget-icon">
+                                    <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-xl-3 mb-50">
+                        <div class="gradient-style1 text-white box-shadow border-radius-10 height-100-p widget-style3">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="widget-data">
+                                    <div class="weight-400 font-20">Server</div>
+                                    <div class="weight-300 font-30">75%</div>
+                                </div>
+                                <div class="widget-icon">
+                                    <div class="icon"><i class="fa fa-server" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="gradient-style2 text-white box-shadow border-radius-10 height-100-p widget-style3">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="widget-data">
+                                    <div class="weight-400 font-20">Traffic</div>
+                                    <div class="weight-300 font-30">55%</div>
+                                </div>
+                                <div class="widget-icon">
+                                    <div class="icon"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="gradient-style3 text-white box-shadow border-radius-10 height-100-p widget-style3">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="widget-data">
+                                    <div class="weight-400 font-20">Email</div>
+                                    <div class="weight-300 font-30">100</div>
+                                </div>
+                                <div class="widget-icon">
+                                    <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 mb-50">
+                        <div class="gradient-style4 text-white box-shadow border-radius-10 height-100-p widget-style3">
+                            <div class="d-flex flex-wrap align-items-center">
+                                <div class="widget-data">
+                                    <div class="weight-400 font-20">Domians</div>
+                                    <div class="weight-300 font-30">50</div>
+                                </div>
+                                <div class="widget-icon">
+                                    <div class="icon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+
+
+
+
+		
+		
+
+
+        
+	</div>
+</div>
+
+
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/jquery.selectric.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js'></script><script  src="/JS/Profile/dist/team/profile/profile.js"></script>
+<script src="/dashboard-ui-1-project-management-with-charts/dist/calend.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.15.6/apexcharts.min.js'></script>
+<script src='https://code.highcharts.com/highcharts.js'></script>
+<script src='https://code.highcharts.com/highcharts-more.js'></script>
+<script src='https://code.highcharts.com/modules/exporting.js'></script>
+<script src='https://code.highcharts.com/modules/accessibility.js'></script><script  src="/JS/Profile/dist/team/profile/profile.js"></script>
+
+</body>
+</html>

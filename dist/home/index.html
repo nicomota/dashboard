@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Meli</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/selectric.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="/dashboard-ui-1-project-management-with-charts/dist/calend.css">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0">
+	
+	<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+		<img alt="img1"  width="30" height="25" src="/dist/img/mercado-livre-logo-D1DC52B13E-seeklogo.com.png" />
+		<b>Internal Systems</b>
+	</a>
+	<input class="form-control form-control-dark w-100" style="max-width: 75%;" type="text" placeholder="Search" aria-label="Search">
+	<ul class="navbar-nav px-3">
+		<li class="nav-item text-nowrap">
+			<a class="nav-link" href="#">Sign out</a>
+		</li>
+	</ul>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<nav class="col-md-2 d-none d-md-block sidebar">
+			<div class="sidebar-sticky">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link active" href="">
+                  <i class="zmdi zmdi-widgets"></i>
+                  Dashboard 
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/dist/Documentations/doc.html">
+                  <i class="zmdi zmdi-file-text"></i>
+                  Ducumetações
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/JS/Profile/dist/team/team.html">
+                  <i class="zmdi zmdi-accounts"></i>
+                  Team IS - ADM
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/JS/Profile/dist/task/task.html">
+                  <i class="zmdi zmdi-chart"></i>
+                  Tasks
+                </a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link" href="/JS/Profile/dist/rede/rede.html">
+                  <i class="zmdi zmdi-layers"></i>
+                  Networking
+                </a>
+					</li> -->
+				</ul>
+
+				<h6 class="sidebar-heading d-flex justify-content-between align-items-center pl-3 mt-4 mb-1 text-muted" style="font-size: 14px;">
+					<span>Aplicações Favoritas</span>
+					<!-- <a class="d-flex align-items-center text-muted" href="#">
+						<i class="zmdi zmdi-plus-circle-o"></i>
+					</a> -->
+				</h6>
+				
+				<ul class="nav flex-column mb-2">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="zmdi zmdi-plus-circle-o"style="margin-left: 4px;"></i>
+						New URL
+					</a>
+				</li>
+				
+					<li class="nav-item">
+						<a class="nav-link" href="https://app.frontapp.com/inboxes/">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/front.png" />
+                	Front
+                </a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="https://arturito.adminml.com/">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/r2d2.jpeg" />
+                	Arturito
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://mordor-backoffice.adminml.com/home">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/mordor.jpeg" />
+                 	Mordor
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://dory.adminml.com/home">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/dory.jpeg" />
+                  	Dory
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://shield.adminml.com/account">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/shild.jpeg" />
+                  	Shild
+                </a>
+					</li>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://grafana-monitoreo.whale.ml/d/krQevsnMz/home?orgId=1">
+						<img alt="img1" width="25" height="25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFrdHnZYEhhfx0IHB1hL_vdDSON-NQSkQXuTcPK2BfOQlb51Aa3jmPC6SfVxfzgP2uxbo&usqp=CAU" />
+				  Grafana
+			</a>
+				</li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<main role="main" class="col-md-9 ml-sm-auto col-lg-10 my-3">
+			<div class="card-list">
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card blue">
+							<div class="title" style="font-size: 12px;">Tickets Assignados</div>
+									<a href="https://shield.adminml.com/requestsFilter">
+										<i class="btn zmdi zmdi-upload"></i>
+									</a>
+								</i>
+							<div class="value">12</div>
+							<!-- <div class="stat"><b>13</b>% increase</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card green">
+							<div class="title" style="font-size: 12px;" >Resolved</div>
+							<!-- <i class="zmdi zmdi-upload"></i> -->
+								<i class="btn zmdi zmdi-upload">
+								</i>
+							<div class="value">27</div>
+							<!-- <div class="stat"><b>4</b>% increase</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card pink">
+							<div class="title" style="font-size: 12px;" >Paused</div>
+							<!-- <i class="zmdi zmdi-upload"></i> -->	
+							<i class="btn zmdi zmdi-upload">
+							</i>
+							<div class="value">29</div>
+							<!-- <div class="stat"><b>4</b>% increase</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card orange">
+							<div class="title" style="font-size: 12px;">Waiting for Client</div>
+							<!-- <i class="zmdi zmdi-download"></i> -->
+							<i class="btn zmdi zmdi-upload">
+							</i>
+							<div class="value">25</div>
+							<!-- <div class="stat"><b>13</b>% decrease</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card red">
+							<div class="title" style="font-size: 12px;">Closed</div>
+							<i class="btn zmdi zmdi-upload"></i>
+							<!-- <i class="zmdi zmdi-download"></i> -->
+							<div class="value">41</div>
+							<!-- <div class="stat"><b>13</b>% decrease</div> -->
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+						<div class="card purple">
+							<div class="title" style="font-size: 12px;">Waiting Approved</div>
+							<!-- <i class="zmdi zmdi-download"></i> -->
+							<a href="https://shield.adminml.com/requests/1139795?userId=me&page=1">
+								<i class="btn zmdi zmdi-upload"></i>
+							</a>
+							<div class="value">41</div>
+							<!-- <div class="stat"><b>13</b>% decrease</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!--    Tabela de Notificacao    -->
+			<div class="projects mb-4">
+				<div class="projects-inner">
+					<header class="projects-header">
+						<div class="title">Notificações</div>
+						<div class="count">| 6 Alertas</div>
+						<!-- <i class="zmdi zmdi-download"></i> -->
+					</header>
+					<table class="projects-table">
+						<thead>
+							<tr>
+								<th>Categorias</th>
+								<th>Data de Criação</th>
+								<th>Usuário</th>
+								<th>Expiração em</th>
+								<th>Status</th>
+								<th class="text-left">Tciket</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>
+								<p>Problemas con Notebook</p>
+								<p></p>
+							</td>
+							<td>
+								<p>15 de julho 2022</p>
+								<p class="text-danger"></p>
+							</td>
+							<td class="member">
+								<!-- <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure> -->
+								<div class="member-info">
+									<p>vinicius</p>
+									<p>IS Suporte</p>
+								</div>
+							</td>
+							<td>
+								<div class="contagem">
+									<table>
+									  <tr>
+										<td>
+											<h2>Dias: </h2>
+										  </td>
+										<td>
+										  <div class="numero" id="dia"></div>
+										</td>
+										<td>
+											<h2>Horas: </h2>
+										  </td>
+										<td>
+										  <div class="numero" id="hora"></div>
+										</td>
+										<td>
+											<h2>Minutos: </h2>
+										  </td>
+										<td>
+										  <div class="numero" id="minuto"></div>
+										</td>
+									  </tr>
+									</table>
+								  </div>
+							</td>
+							<td class="status">
+								<span class="status-text status-blue">Assignado</span>
+							</td>
+							<td>
+								<form class="button" action="#" method="POST">
+									<a href="https://shield.adminml.com/requests/1196614?status=paused&page=1">
+										<button type="button" class="btn btn-primary ir">Visualizar</button>
+									</a>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Troca de equipamento</p>
+								<p></p>
+							</td>
+							<td>
+								<p>17 de julho 2021</p>
+								<p class="text-danger"></p>
+							</td>
+							<td class="member">
+								<!-- <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure> -->
+								<div class="member-info">
+									<p>ext_nimontei</p>
+									<p>IS Suporte</p>
+								</div>
+							</td>
+							<td>
+								<p>24 de julho 2021</p>
+								<p></p>
+							</td>
+							<td class="status">
+								<span class="status-text status-blue">Assignado</span>
+							</td>
+							<td>
+								<form class="button" action="#" method="POST">
+									<a href="">
+										<button type="button" class="btn btn-primary ir">Visualizar</button>
+									</a>
+								</form>
+							</td>
+						</tr>
+						<tr class="">
+							<td>
+								<p>VPN Externos</p>
+								<p></p>
+							</td>
+							<td>
+								<p>12 de julho 2021</p>
+								<p class="text-danger"></p>
+							</td>
+							<td class="member">
+								<!-- <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure> -->
+								<div class="member-info">
+									<p>calberto</p>
+									<p>IS Suporte</p>
+								</div>
+							</td>
+							<td>
+								<p>01 de setembro 2021</p>
+								<p></p>
+							</td>
+							<td class="status">
+								<span class="status-text status-blue">Assignado</span>
+							</td>
+							<td>
+								<form class="button" action="#" method="POST">
+									<a href="">
+										<button type="button" class="btn btn-primary ir">Visualizar</button>
+									</a>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Recâmbio</p>
+								<p></p>
+							</td>
+							<td>
+								<p>11 de julho 2021</p>
+								<p class="text-danger"></p>
+							</td>
+							<td class="member">
+								<!-- <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure> -->
+								<div class="member-info">
+									<p>videpaul</p>
+									<p>IS Suporte</p>
+								</div>
+							</td>
+							<td>
+								<p>14 de julho 2021</p>
+								<p></p>
+							</td>
+							<td class="status">
+								<span class="status-text status-blue">Assignado</span>
+							</td>
+							<td>
+								<form class="button" action="#" method="POST">
+									<a href="">
+										<button type="button" class="btn btn-primary ir">Visualizar</button>
+									</a>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Licença de Office</p>
+								<p></p>
+							</td>
+							<td>
+								<p>07 de julho 2021</p>
+								<p class="text-danger"></p>
+							</td>
+							<td class="member">
+								<!-- <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure> -->
+								<div class="member-info">
+									<p>guvila</p>
+									<p>IS Suporte</p>
+								</div>
+							</td>
+							<td>
+								<p>01 de agosto 2021</p>
+								<p></p>
+							</td>
+							<td class="status">
+								<span class="status-text status-blue">Assignado</span>
+							</td>
+							<td>
+								<form class="button" action="#" method="POST">
+									<a href="">
+										<button type="button" class="btn btn-primary ir">Visualizar</button>
+									</a>
+								</form>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>Instalação de Aplicação</p>
+								<p></p>
+							</td>
+							<td>
+								<p>02 de julho 2021</p>
+								<p class="text-danger"></p>
+							</td>
+							<td class="member">
+								<!-- <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure> -->
+								<div class="member-info">
+									<p>ext_nimontei</p>
+									<p>IS Suporte</p>
+								</div>
+							</td>
+							<td>
+								<p>05 de julho 2021</p>
+								<p></p>
+							</td>
+							<td class="status">
+								<span class="status-text status-blue">Assignado</span>
+							</td>
+							<td>
+								<form class="button" action="#" method="POST">
+									<a href="">
+										<button type="button" class="btn btn-primary ir">Visualizar</button>
+									</a>
+								</form>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="chart-data">
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<div class="chart doughnut-chart dark">
+							<div class="actions">
+								<button type="button" class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									 <i class="zmdi zmdi-more-vert"></i>
+								</button>
+								<div class="dropdown-menu dropdown-menu-right">
+									<button class="dropdown-item" type="button">Action</button>
+									<button class="dropdown-item" type="button">Another action</button>
+									<button class="dropdown-item" type="button">Something else here</button>
+								</div>
+							</div>
+							<h3 class="title">Total de Tickets</h3> 
+							<p class="tagline">2022</p>
+							<canvas height="500" width="500" id="doughnutChartDark"></canvas>
+						</div>
+					</div>
+
+					<section id="contact">
+
+						<h1 class="section-header">Sugestões de Melhorias</h1>
+					  
+						<div class="contact-wrapper">
+					  
+						  <!-- Left contact page -->
+					  
+						  <form id="contact-form" class="form-horizontal" role="form">
+					  
+							<div class="form-group">
+							  <div class="col-sm-12">
+								<input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+							  </div>
+							</div>
+					  
+							<div class="form-group">
+							  <div class="col-sm-12">
+								<input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+							  </div>
+							</div>
+					  
+							<textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+					  
+							<button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+							  <div class="alt-send-button">
+								<i class="fa fa-paper-plane" ></i><span class="send-text">SEND</span>
+							  </div>
+					  
+							</button>
+					  
+						  </form>
+					 </section>
+
+
+
+					 
+						  <!-- Left contact page -->
+					  
+						  <div class="direct-contact-container">
+					  
+							<!-- <ul class="contact-list">
+							  <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Florianópolis, SC</span></i></li>
+					  					  
+							  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">ext_nimontei@mercadolivre.com</a></span></i></li>
+					  
+							</ul> -->
+
+					  
+							<!-- <div class="copyright">&copy; IS SUPORTE</div> -->
+					  
+						  </div>
+					  
+						</div>
+					  
+					  </section>
+
+				</div>
+			</div>
+		</main>
+	</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/jquery.selectric.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js'></script><script  src="./script.js"></script>
+<script src="/dashboard-ui-1-project-management-with-charts/dist/calend.js"></script>
+
+
+</body>
+</html>
