@@ -1,0 +1,63 @@
+
+
+@import "https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/dashboard.scss";
+body {
+  background-color: #1b2431;
+  color: #202020;
+  font-family: "Montserrat", "Helvetica", "Open Sans", "Arial";
+  font-size: 13px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+  
+/*    BARRA LATEAL E VERTICAL    */
+
+.navbar {
+    background-color: #06101c;
+  }
+  
+.sidebar {
+    background-color: #06101c;
+    box-shadow: none;
+  }
+.sidebar .nav-link {
+  border-left: 5px solid transparent;
+  color: white;
+  /* color: #738297; */
+  padding: 0.5rem 0.75rem;
+}
+.sidebar .nav-link:hover {
+  color: white;
+}
+.sidebar .nav-link.active {
+  border-left: 5px solid #738297;
+  color: white;
+}
+.sidebar .zmdi {
+  display: inline-block;
+  font-size: 1.35rem;
+  margin-right: 5px;
+  min-width: 25px;
+}
+
+
+/*     ESPAÇO ENTRE AS DIVS NA SIDE BAR    */ 
+.zmdi {
+    line-height: 1;
+    vertical-align: middle;
+  }
+  
+
+
+  

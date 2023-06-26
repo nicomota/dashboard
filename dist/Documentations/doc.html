@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Documentações</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/selectric.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="/dist/Documentations/doc.css">
+<link rel="stylesheet" href="/dashboard-ui-1-project-management-with-charts/dist/calend.css">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0">
+	
+	<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+		<img alt="img1"  width="30" height="25" src="/JS/Profile/dist/img/mercado-livre-logo-D1DC52B13E-seeklogo.com.png" />
+		<b>Mercado Livre - IS</b>
+	</a>
+	<ul class="navbar-nav px-3">
+		<li class="nav-item text-nowrap">
+			<a class="nav-link" href="#">Sign out</a>
+		</li>
+	</ul>
+</nav>
+<div class="container-fluid">
+	<div class="row">
+		<nav class="col-md-2 d-none d-md-block sidebar">
+			<div class="sidebar-sticky">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="/JS/Profile/dist/home/index.html">
+                  <i class="zmdi zmdi-widgets"></i>
+                  Dashboard 
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="/JS/Profile/dist/Documentations/doc.html">
+                  <i class="zmdi zmdi-file-text"></i>
+                  Ducumetações
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/JS/Profile/dist/team/team.html">
+                  <i class="zmdi zmdi-accounts"></i>
+                  Team IS - ADM
+                </a>
+					</li>
+					<li class="nav-item">
+            <a class="nav-link" href="/JS/Profile/dist/task/task.html">
+                  <i class="zmdi zmdi-chart"></i>
+                  Tasks
+                </a>
+					</li>
+					<!-- <li class="nav-item">
+						<a class="nav-link" href="/JS/Profile/dist/rede/rede.html">
+                  <i class="zmdi zmdi-layers"></i>
+                  Networking
+                </a>
+					</li> -->
+				</ul>
+
+				<h6 class="sidebar-heading d-flex justify-content-between align-items-center pl-3 mt-4 mb-1 text-muted" style="font-size: 14px;">
+					<span>Aplicações Favoritas</span>
+					<!-- <a class="d-flex align-items-center text-muted" href="#">
+						<i class="zmdi zmdi-plus-circle-o"></i>
+					</a> -->
+				</h6>
+				
+				<ul class="nav flex-column mb-2">
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<i class="zmdi zmdi-plus-circle-o"style="margin-left: 4px;"></i>
+						New URL
+					</a>
+				</li>
+				
+					<li class="nav-item">
+						<a class="nav-link" href="https://app.frontapp.com/inboxes/">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/front.png" />
+                	Front
+                </a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="https://arturito.adminml.com/">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/r2d2.jpeg" />
+                	Arturito
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://mordor-backoffice.adminml.com/home">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/mordor.jpeg" />
+                 	Mordor
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://dory.adminml.com/home">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/dory.jpeg" />
+                  	Dory
+                </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://shield.adminml.com/account">
+							<img alt="img1" width="25" height="25" src="/JS/Profile/dist/img/shild.jpeg" />
+                  	Shild
+                </a>
+					</li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://grafana-monitoreo.whale.ml/d/krQevsnMz/home?orgId=1">
+              <img alt="img1" width="25" height="25" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFrdHnZYEhhfx0IHB1hL_vdDSON-NQSkQXuTcPK2BfOQlb51Aa3jmPC6SfVxfzgP2uxbo&usqp=CAU" />
+            Grafana
+        </a>
+          </li>
+				</ul>
+			</div>
+		</nav>
+
+
+
+
+            <div class="app-content">
+                <div class="app-content-header">
+                  <h1 class="app-content-headerText">Documentos</h1>
+                  <button class="mode-switch" title="Switch Theme">
+                    <!-- <svg class="moon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="24" height="24" viewBox="0 0 24 24">
+                      <defs></defs>
+                      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg> -->
+                  </button>
+                  <button class="app-content-headerButton">Add Doc</button>
+                </div>
+                <div class="app-content-actions">
+                  <input class="search-bar" placeholder="Search..." type="text">
+                  <div class="app-content-actions-wrapper">
+                    <div class="filter-button-wrapper">
+                      <button class="action-button filter jsFilter"><span>Filter</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-filter"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg></button>
+                      <div class="filter-menu">
+                        <label>Category</label>
+                        <select>
+                          <option>All Category</option>
+                          <option>VPN</option>                     
+                          <option>SAP</option>
+                          <option>Windows</option>
+                          <option>Macbook</option>
+                        </select>
+                        <label>Status</label>
+                        <select>
+                          <option>All Status</option>
+                          <option>Private</option>
+                          <option>Public</option>
+                        </select>
+                        <div class="filter-menu-buttons">
+                          <button class="filter-button reset">
+                            Reset
+                          </button>
+                          <button class="filter-button apply">
+                            Apply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="action-button list active" title="List View">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                    </button>
+                    <button class="action-button grid" title="Grid View">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-grid"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="products-area-wrapper tableView">
+                  <div class="products-header">
+                    <div class="product-cell image">
+                      Nome
+                    </div>
+                    <div class="product-cell category">Categoria</div>
+                    <div class="product-cell status-cell">Status</div>
+                    <div class="product-cell sales">Equipe</div>
+                    <!-- <div class="product-cell stock">Stock</div> -->
+                    <div class="product-cell price">Download</div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/docs.svg" alt="product">
+                        <span>Manual do Usuário</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>MFA</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status disabled">Private</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <!-- <div class="product-cell stock"><span class="cell-label">Stock:</span>46</div> -->
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="https://docs.google.com/document/d/14YQjdwpC1d7wEY94_Zpt9vzCwCfFLbIU/edit">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                        <!-- <button type="button" class="btn btn-danger excluir">Excluir</button> -->
+                    </div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/docs.svg" alt="product">
+                        <span>Manual do Usuário</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Workspace</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status active">Public</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="https://docs.google.com/document/d/1rRqjjDHFjTmPAedlzFe4SSzmd1qUMaj2J4tE9fqkPdU/edit">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                    </div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/docs.svg" alt="product">
+                        <span>Manual VPN Externos</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Wazuh</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status disabled">Private</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="https://docs.google.com/document/d/1Fww1pIUsGY0kOzSHRrJ-rcFAbrnKkISJyKhUaRxGE6M/edit">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                    </div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/sheets.svg" alt="product">
+                        <span>Controle de Envios</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Ownboarding</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status active">Public</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                    </div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/docs.svg" alt="product">
+                        <span>Guia de Instalação</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>SAP</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status disabled">Private</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                    </div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/sheets.svg" alt="product">
+                        <span>Controle de Linha</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Celular</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status active">Public</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                    </div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/sheets.svg" alt="product">
+                        <span>Escalas</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>IS</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status active">Public</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                    </div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/docs.svg" alt="product">
+                        <span>Manual</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>TeamViewer</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status active">Public</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                    </div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/sheets.svg" alt="product">
+                        <span>Envio Mochilas</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>Ownboarding</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status active">Public</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                    </div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/docs.svg" alt="product">
+                        <span>Teste</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>....</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status disabled">Private</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                    </div>
+                  </div>
+                  <div class="products-row">
+                    <button class="cell-more-button">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+                    </button>
+                      <div class="product-cell image">
+                        <img src="https://media.flaticon.com/dist/min/img/landing/gsuite/docs.svg" alt="product">
+                        <span>Teste 2</span>
+                      </div>
+                    <div class="product-cell category"><span class="cell-label">Category:</span>....</div>
+                    <div class="product-cell status-cell">
+                      <span class="cell-label">Status:</span>
+                      <span class="status active">Public</span>
+                    </div>
+                    <div class="product-cell sales"><span class="cell-label">Equipe:</span>IS Suporte</div>
+                    <div class="product-cell price">
+                      <a href="">
+                        <button type="button" class="btn btn-success">Download</button>
+                      </a>
+                      <a href="">
+                        <button type="button" class="btn btn-primary ir">Visualizar</button>
+                      </a>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        
+	</div>
+</div>
+
+
+
+
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
+<script src='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/jquery.selectric.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js'></script><script  src="doc.js"></script>
+<script src="/dashboard-ui-1-project-management-with-charts/dist/calend.js"></script>
+
+
+</body>
+</html>
